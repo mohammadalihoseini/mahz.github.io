@@ -1,34 +1,76 @@
-<style>
-  /* Style the input fields */
-  input[type=text], input[type=password] {
-    width :100%; 
-    padding :12px; 
-    margin-bottom :20px; 
-    border-radius :4px; 
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-  /* Add padding to containers */
-  .bottom-links {
-    display:flex ; 
-    justify-content :space-between ;  
-  }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
 
-  .bottom-links a{
-    text-decoration:none ;
-  }
+body{
+  background-color: black;
+}
 
-  /* Add a black background color to the box */
-  .login-container {
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
 
-  /* Add a red background color to the buttons */
-  button:hover {
-    opacity:1;
-  }
-</style>
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* .login-container{
+  width: 400px;
+} */
+.form{
+  justify-content: center;
+  align-items: center;
+}
+.form-box {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+}
+
+input[type=text], input[type=password] {
+  display: flex;
+  width :300px; 
+  padding :14px 2px; 
+  margin-top :20px; 
+  border-radius :4px; 
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+  align-content: center;
+}
+.button{
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+
+
+.bottom-links {
+  display:flex ;
+  justify-content :space-between ;
+  margin-top: 10px;
+}
+
+.bottom-links a{
+  text-decoration:none ;
+}
+
+
+button:hover {
+  opacity:1;
+}
